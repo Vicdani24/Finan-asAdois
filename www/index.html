@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090D0B">
+  <title>Finanças a Dois</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div>
+      <span class="subtitulo">NOSSA VIDA FINANCEIRA</span>
+      <h1>Finanças <span>a Dois.</span></h1>
+      <p id="mesAtual">Nosso planejamento juntos</p>
+    </div>
+    <div class="avatar">💚</div>
+  </header>
+
+  <main>
+    <section class="saldo-card">
+      <div class="saldo-topo">
+        <span>Saldo disponível do casal</span>
+        <span class="status">● FINANÇAS</span>
+      </div>
+      <h2 id="saldoTotal">R$ 0,00</h2>
+      <div class="saldo-detalhes">
+        <div>
+          <small>Receitas do mês</small>
+          <strong id="receitasTotal">R$ 0,00</strong>
+        </div>
+        <div>
+          <small>Despesas do mês</small>
+          <strong id="despesasTotal">R$ 0,00</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="titulo-secao">
+        <h2>Nosso espaço</h2>
+        <span>FINANÇAS COMPARTILHADAS</span>
+      </div>
+
+      <div class="pessoas">
+        <div class="pessoa-card" id="pessoa1">
+          <div class="icone-pessoa">👤</div>
+          <small>PESSOA 01</small>
+          <h3 id="nomePessoa1">Pessoa 1</h3>
+          <p>Controle individual</p>
+          <span class="seta">↗</span>
+        </div>
+
+        <div class="pessoa-card" id="pessoa2">
+          <div class="icone-pessoa">👤</div>
+          <small>PESSOA 02</small>
+          <h3 id="nomePessoa2">Pessoa 2</h3>
+          <p>Controle individual</p>
+          <span class="seta">↗</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="titulo-secao">
+        <h2>Planejamento</h2>
+        <span>NOSSOS OBJETIVOS</span>
+      </div>
+
+      <div class="atalhos">
+        <button class="atalho" data-tela="casa">
+          <span>🏠</span>
+          <strong>Casa</strong>
+          <small>Despesas da família</small>
+        </button>
+        <button class="atalho" data-tela="cofres">
+          <span>🐷</span>
+          <strong>Cofres</strong>
+          <small>Nossas economias</small>
+        </button>
+        <button class="atalho" data-tela="projetos">
+          <span>🎯</span>
+          <strong>Projetos</strong>
+          <small>Nossos sonhos</small>
+        </button>
+        <button class="atalho" data-tela="cartoes">
+          <span>💳</span>
+          <strong>Cartões</strong>
+          <small>Faturas e parcelas</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="titulo-secao">
+        <h2>Movimentações</h2>
+        <span>ATIVIDADE RECENTE</span>
+      </div>
+      <div id="movimentacoes" class="movimentacoes">
+        <div class="vazio">
+          <span>📊</span>
+          <p>Suas movimentações aparecerão aqui.</p>
+          <small>Vamos começar a organizar nossas finanças!</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="menu-inferior">
+    <button class="menu-item ativo" data-tela="inicio">
+      <span>⌂</span><small>Início</small>
+    </button>
+    <button class="menu-item" data-tela="receitas">
+      <span>↗</span><small>Receitas</small>
+    </button>
+    <button class="menu-item" data-tela="despesas">
+      <span>↘</span><small>Despesas</small>
+    </button>
+    <button class="menu-item" data-tela="relatorios">
+      <span>▥</span><small>Relatórios</small>
+    </button>
+    <button class="menu-item" data-tela="configuracoes">
+      <span>⚙</span><small>Ajustes</small>
+    </button>
+  </nav>
+
+  <script src="js/dados.js"></script>
+  <script src="js/navegacao.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
